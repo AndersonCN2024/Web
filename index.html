@@ -378,7 +378,7 @@
     </script>
 </body>
 </html>
-		<head>
+	<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliz 9 Meses Mi Niña Dinosaurio</title>
@@ -389,11 +389,32 @@
             height: 100%;
             overflow-x: auto; /* Permitir desplazamiento horizontal */
             overflow-y: auto; /* Permitir desplazamiento vertical */
+            position: relative;
+            width: 100%;
+            background: linear-gradient(135deg, #1c0522 0%, #330a3f 100%);
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;700&display=swap');
+        .container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            padding: 20px;
+        }
 
-        /* Resto de los estilos */
+        /* Asegura que el contenido dentro del contenedor no se corte */
+        .content {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* Otros estilos */
+    </style>
+</head>
     </style>
 			<head>
     <meta charset="UTF-8">
@@ -403,7 +424,7 @@
         /* Tus estilos existentes aquí */
 
         /* Estilos para dispositivos móviles */
-        @media (max-width: 768px) {
+        @media (max-width: 1280px) {
             /* Ajustes para tabletas y teléfonos grandes */
         }
 
